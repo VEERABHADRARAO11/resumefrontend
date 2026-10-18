@@ -1,7 +1,6 @@
 // Base API endpoint for the backend server
 // Defaults to http://localhost:5000/api or relative /api through Vite proxy
-const API_BASE = 'http://localhost:5000/api';
-
+const API_BASE = (import.meta.env.VITE_API_URL || 'http://localhost:5000') + '/api';
 /**
  * Helper to handle fetch calls and server down errors gracefully
  */
