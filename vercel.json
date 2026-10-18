@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://resume-backend-1-luv6.onrender.com/api/:path*"
+    }
+  ]
+}
